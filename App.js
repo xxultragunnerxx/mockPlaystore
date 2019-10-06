@@ -12,7 +12,6 @@ app.get('/apps', (req, res) => {
   const { search = ""} = req.query;
 
   let results = playstore.filter(playstore => playstore.Genres.toLowerCase().includes(search.toLowerCase()));
-  console.log(playstore.Genres.toLowerCase().includes(search.toLowerCase()));
   res.json(results);
 
 });
