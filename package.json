@@ -4,22 +4,21 @@
   "description": "",
   "main": "playstore.js",
   "scripts": {
-    "start": "App.js",
-    "dev": "nodemon app"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xxultragunnerxx/mockPlaystore.git"
+    "start": "server.js",
+    "dev": "nodemon app",
+    "test":"mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/xxultragunnerxx/mockPlaystore/issues"
-  },
-  "homepage": "https://github.com/xxultragunnerxx/mockPlaystore#readme",
   "dependencies": {
+    "debug": "^4.1.1",
     "express": "^4.17.1",
     "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1",
+    "supertest": "^4.0.2"
   }
 }
