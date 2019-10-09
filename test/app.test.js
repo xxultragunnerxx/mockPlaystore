@@ -20,3 +20,11 @@ describe('GET /app with params', () => {
     .expect('Content-Type', /json/)
   });
 });
+
+describe('Should 404', () => {
+  it('should not return a list', () => {
+    return supertest(app)
+    .get('/apps')
+    .expect(404)
+  });
+});
